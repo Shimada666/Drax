@@ -1,31 +1,32 @@
 <script lang="ts" setup>
-import { useRoute } from 'vue-router'
-import Nav from '@/components/layout/Nav.vue'
-import SideBar from '@/components/layout/Sidebar.vue'
-
-const route = useRoute()
+import Footer from '@/components/layout/Footer.vue'
+import Header from '@/components/layout/Header.vue'
 </script>
 
 <template>
-  <a-layout id="layout">
-    <Nav class="nav" />
-    <a-layout class="layout-view">
-      <SideBar />
-      <a-layout style="padding: 24px 24px;">
-        <a-layout-content
-          :style="{ background: '#fff', padding: '24px', margin: 0 }"
-        >
-          <router-view />
-        </a-layout-content>
-      </a-layout>
-    </a-layout>
+  <a-layout class="layout">
+    <a-layout-header>
+      <Header />
+    </a-layout-header>
+    <a-layout-content style="padding: 0 50px">
+      <div :style="{ background: '#fff', padding: '24px', marginTop: '24px', minHeight: '280px' }">
+        Content
+      </div>
+    </a-layout-content>
+    <a-layout-footer>
+      <Footer />
+    </a-layout-footer>
   </a-layout>
 </template>
 
 <style lang="scss" scoped>
-#layout {
-  .layout-view {
-    min-height: calc(100vh - 48px);
-  }
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+}
+
+[data-theme='dark'] .site-layout-content {
+  background: #141414;
 }
 </style>
