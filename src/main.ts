@@ -6,4 +6,5 @@ import 'virtual:uno.css'
 
 const app = createApp(App)
 app.use(router)
-  .mount('#app')
+
+router.isReady().then(() => app.mount('#app'))

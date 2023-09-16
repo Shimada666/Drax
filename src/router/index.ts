@@ -8,17 +8,37 @@ const history = createWebHistory()
 const routes = [
   {
     path: '/:catchAll(.*)',
-    redirect: '/',
+    redirect: '/home',
   },
   {
-    path: '/',
+    path: '/home',
     name: 'home',
-    component: () => import('@/views/Home.vue'),
+    component: () => import('@/views/home/Home.vue'),
   },
   {
     path: '/login',
     name: 'login',
     component: () => import('@/views/Login.vue'),
+  },
+  {
+    path: '/product',
+    name: 'product',
+    component: () => import('@/views/product/Product.vue'),
+  },
+  {
+    path: '/news',
+    name: 'news',
+    component: () => import('@/views/news/News.vue'),
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: () => import('@/views/about/About.vue'),
+  },
+  {
+    path: '/join',
+    name: 'join',
+    component: () => import('@/views/join/Join.vue'),
   },
 ]
 const router = createRouter({

@@ -1,7 +1,21 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 
-const selectedKeys = ref<string[]>([])
+const router = useRouter()
+const route = useRoute()
+
+const selectedKeys = ref<string[]>([route.name as string])
+const navItems = ref([
+  { key: 'home', name: '首页' },
+  { key: 'product', name: '产品动态' },
+  { key: 'news', name: '新闻中心' },
+  { key: 'about', name: '公司介绍' },
+  { key: 'join', name: '加入我们' },
+])
+function handleNavItemClick({ item, key, keyPath }) {
+  router.push(`/${key}`)
+}
 </script>
 
 <template>
@@ -11,21 +25,10 @@ const selectedKeys = ref<string[]>([])
     theme="dark"
     mode="horizontal"
     :style="{ lineHeight: '64px' }"
+    @click="handleNavItemClick"
   >
-    <a-menu-item key="1">
-      首页
-    </a-menu-item>
-    <a-menu-item key="2">
-      产品动态
-    </a-menu-item>
-    <a-menu-item key="3">
-      新闻中心
-    </a-menu-item>
-    <a-menu-item key="4">
-      关于我们
-    </a-menu-item>
-    <a-menu-item key="5">
-      加入我们
+    <a-menu-item v-for="item in navItems" :key="item.key">
+      {{ item.name }}
     </a-menu-item>
   </a-menu>
 </template>
