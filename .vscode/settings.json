@@ -21,5 +21,10 @@
     "json",
     "jsonc",
     "yaml"
-  ]
+  ],
+  "editor.quickSuggestions": {
+    "strings": true,
+    "other": true,
+    "comments": true
+  }
 }
