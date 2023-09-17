@@ -20,6 +20,9 @@ dependencies:
   sass:
     specifier: ^1.67.0
     version: registry.npmmirror.com/sass@1.67.0
+  swiper:
+    specifier: ^10.2.0
+    version: registry.npmmirror.com/swiper@10.2.0
   unplugin-vue-components:
     specifier: ^0.25.2
     version: registry.npmmirror.com/unplugin-vue-components@0.25.2(vue@3.3.4)
@@ -1352,7 +1355,7 @@ packages:
       '@typescript-eslint/typescript-estree': registry.npmmirror.com/@typescript-eslint/typescript-estree@5.59.0(typescript@4.7.4)
       eslint: registry.npmmirror.com/eslint@8.49.0
       eslint-scope: registry.npmmirror.com/eslint-scope@5.1.1
-      semver: registry.npmmirror.com/semver@7.5.0
+      semver: registry.npmmirror.com/semver@7.5.4
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -4998,6 +5001,13 @@ packages:
     name: svg-tags
     version: 1.0.0
     dev: true
+
+  registry.npmmirror.com/swiper@10.2.0:
+    resolution: {integrity: sha512-nktQsOtBInJjr3f5DicxC8eHYGcLXDVIGPSon0QoXRaO6NjKnATCbQ8SZsD3dN1Ph1RH4EhVPwSYCcuDRFWHGQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/swiper/-/swiper-10.2.0.tgz}
+    name: swiper
+    version: 10.2.0
+    engines: {node: '>= 4.7.0'}
+    dev: false
 
   registry.npmmirror.com/text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/text-table/-/text-table-0.2.0.tgz}

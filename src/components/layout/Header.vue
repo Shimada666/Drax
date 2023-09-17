@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import Logo from '@/components/Logo.vue'
 
 const router = useRouter()
 const route = useRoute()
@@ -19,7 +20,9 @@ function handleNavItemClick({ item, key, keyPath }) {
 </script>
 
 <template>
-  <div class="logo" />
+  <div class="logo">
+    <Logo type="white" />
+  </div>
   <a-menu
     v-model:selectedKeys="selectedKeys"
     theme="dark"
@@ -39,7 +42,7 @@ function handleNavItemClick({ item, key, keyPath }) {
   width: 32px;
   height: 32px;
   margin: 16px 24px 16px 0;
-  background: rgba(255, 255, 255, 0.3);
+  //background: rgba(255, 255, 255, 0.3);
 }
 
 .ant-row-rtl .logo {

@@ -8,10 +8,7 @@ import Header from '@/components/layout/Header.vue'
     <a-layout-header>
       <Header />
     </a-layout-header>
-    <a-layout-content style="padding: 0 50px">
-      <!-- <div :style="{ background: '#fff', padding: '24px', marginTop: '24px', minHeight: '280px' }"> -->
-      <!--  Content -->
-      <!-- </div> -->
+    <a-layout-content>
       <router-view />
     </a-layout-content>
     <a-layout-footer>

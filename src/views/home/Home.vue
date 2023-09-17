@@ -1,9 +1,11 @@
 <script lang="ts" setup>
+import MySwiper from '@/views/home/MySwiper.vue'
 </script>
 
 <template>
-  <div>home</div>
+  <MySwiper />
 </template>
 
-<style>
+<style lang="scss" scoped>
+
 </style>
