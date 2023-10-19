@@ -15,7 +15,7 @@
     "@ant-design/icons-vue": "^7.0.0",
     "@vueuse/core": "^10.4.1",
     "ant-design-vue": "^4.0.3",
-    "axios": "^0.21.4",
+    "axios": "^1.5.1",
     "sass": "^1.67.0",
     "swiper": "^10.2.0",
     "unplugin-vue-components": "^0.25.2",
