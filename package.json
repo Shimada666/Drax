@@ -1,7 +1,7 @@
 {
   "name": "template-vue3",
-  "description": "A template of vue3",
   "version": "0.0.0",
+  "description": "A template of vue3",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
@@ -16,6 +16,7 @@
     "@vueuse/core": "^10.4.1",
     "ant-design-vue": "^4.0.3",
     "axios": "^1.5.1",
+    "flowbite": "^2.2.0",
     "sass": "^1.67.0",
     "swiper": "^10.2.0",
     "unplugin-vue-components": "^0.25.2",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.42.0",
+    "@julr/unocss-preset-flowbite": "^0.0.2",
     "@types/node": "^18.11.12",
     "@vitejs/plugin-vue": "^4.3.4",
     "@vitejs/plugin-vue-jsx": "^3.0.2",

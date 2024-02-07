@@ -17,6 +17,9 @@ dependencies:
   axios:
     specifier: ^1.5.1
     version: registry.npmmirror.com/axios@1.5.1
+  flowbite:
+    specifier: ^2.2.0
+    version: registry.npmmirror.com/flowbite@2.2.0
   sass:
     specifier: ^1.67.0
     version: registry.npmmirror.com/sass@1.67.0
@@ -37,6 +40,9 @@ devDependencies:
   '@antfu/eslint-config':
     specifier: ^0.42.0
     version: registry.npmmirror.com/@antfu/eslint-config@0.42.0(eslint@8.49.0)(typescript@4.7.4)
+  '@julr/unocss-preset-flowbite':
+    specifier: ^0.0.2
+    version: registry.npmmirror.com/@julr/unocss-preset-flowbite@0.0.2(unocss@0.55.7)
   '@types/node':
     specifier: ^18.11.12
     version: registry.npmmirror.com/@types/node@18.16.0
@@ -1062,6 +1068,18 @@ packages:
       '@jridgewell/sourcemap-codec': registry.npmmirror.com/@jridgewell/sourcemap-codec@1.4.14
     dev: true
 
+  registry.npmmirror.com/@julr/unocss-preset-flowbite@0.0.2(unocss@0.55.7):
+    resolution: {integrity: sha512-9U+RABXC9xIH9sCIOZ1a342jceWUhnxapH6o/4bXCGp7Ou8D4E/f5A5myJiPeuegjwTH+Z2GrTqoUF7A9xb2PA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@julr/unocss-preset-flowbite/-/unocss-preset-flowbite-0.0.2.tgz}
+    id: registry.npmmirror.com/@julr/unocss-preset-flowbite/0.0.2
+    name: '@julr/unocss-preset-flowbite'
+    version: 0.0.2
+    peerDependencies:
+      unocss: '>= 0.31.13 < 1'
+    dependencies:
+      mini-svg-data-uri: registry.npmmirror.com/mini-svg-data-uri@1.4.4
+      unocss: registry.npmmirror.com/unocss@0.55.7(postcss@8.4.29)(vite@4.4.9)
+    dev: true
+
   registry.npmmirror.com/@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz}
     name: '@nodelib/fs.scandir'
@@ -1091,6 +1109,12 @@ packages:
     name: '@polka/url'
     version: 1.0.0-next.23
     dev: true
+
+  registry.npmmirror.com/@popperjs/core@2.11.8:
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@popperjs/core/-/core-2.11.8.tgz}
+    name: '@popperjs/core'
+    version: 2.11.8
+    dev: false
 
   registry.npmmirror.com/@rollup/pluginutils@5.0.4:
     resolution: {integrity: sha512-0KJnIoRI8A+a1dqOYLxH8vBf8bphDmty5QvIm2hqm7oFCFYKCAZWWd2hXgMibaPsNDhI0AtpYfQZJG47pt/k4g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@rollup/pluginutils/-/pluginutils-5.0.4.tgz}
@@ -3264,6 +3288,15 @@ packages:
     version: 3.2.7
     dev: true
 
+  registry.npmmirror.com/flowbite@2.2.0:
+    resolution: {integrity: sha512-Eq0qWz4a5nlxaGuUcspzpu+8Ny0A7lKEJEKcuPpkdSoF8tWjbKeuVVgKk8/q10ZE9bhXh1GHBXdCsRxu0LZTNQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/flowbite/-/flowbite-2.2.0.tgz}
+    name: flowbite
+    version: 2.2.0
+    dependencies:
+      '@popperjs/core': registry.npmmirror.com/@popperjs/core@2.11.8
+      mini-svg-data-uri: registry.npmmirror.com/mini-svg-data-uri@1.4.4
+    dev: false
+
   registry.npmmirror.com/follow-redirects@1.15.2:
     resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/follow-redirects/-/follow-redirects-1.15.2.tgz}
     name: follow-redirects
@@ -4165,6 +4198,12 @@ packages:
     version: 1.0.1
     engines: {node: '>=4'}
     dev: true
+
+  registry.npmmirror.com/mini-svg-data-uri@1.4.4:
+    resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz}
+    name: mini-svg-data-uri
+    version: 1.4.4
+    hasBin: true
 
   registry.npmmirror.com/minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/minimatch/-/minimatch-3.1.2.tgz}

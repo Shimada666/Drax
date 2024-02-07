@@ -9,9 +9,9 @@ import UnoCSS from 'unocss/vite'
 export default defineConfig({
   plugins: [vue(), Components({
     resolvers: [
-      AntDesignVueResolver({
-        importStyle: false, // css in js
-      }),
+      // AntDesignVueResolver({
+      //   importStyle: false, // css in js
+      // }),
     ],
   }), vueJsxPlugin(), UnoCSS()],
   resolve: {
